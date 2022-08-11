@@ -1,0 +1,10 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+a",
+    "command": "editor.action.insertSnippet",
+    "when": "editorHasSelection && editorTextFocus",
+    "args": { "snippet": "<a href=\"link_to\">$TM_SELECTED_TEXT</a>" },
+    "description": "This will place the selected text between <a href='link_to'></a> Tags"
+  }
+]
