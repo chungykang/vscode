@@ -6,5 +6,19 @@
     "when": "editorHasSelection && editorTextFocus",
     "args": { "snippet": "<a href=\"link_to\">$TM_SELECTED_TEXT</a>" },
     "description": "This will place the selected text between <a href='link_to'></a> Tags"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "editor.action.insertSnippet",
+    "when": "editorHasSelection && editorTextFocus",
+    "args": { "snippet": "<div>$TM_SELECTED_TEXT</div>" },
+    "description": "This will place the selected text between <div></div> Tags"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "editor.action.insertSnippet",
+    "when": "editorHasSelection && editorTextFocus",
+    "args": { "snippet": "<p>$TM_SELECTED_TEXT</p>" },
+    "description": "This will place the selected text between <p></p> Tags"
   }
 ]
