@@ -1,5 +1,6 @@
-// /Users/username/Library/Application Support/Code/User/keybindings.json
+// /Users/user_name/Library/Application Support/Code/User
 // Place your key bindings in this file to override the defaults
+
 [
   {
     "key": "ctrl+a",
@@ -12,21 +13,16 @@
     "key": "ctrl+d",
     "command": "editor.action.insertSnippet",
     "when": "editorHasSelection && editorTextFocus",
-    "args": { "snippet": "<div>$TM_SELECTED_TEXT</div>" },
+    "args": {
+      "snippet": "<div ${1|id=\"\",class=\"\"|}>$TM_SELECTED_TEXT</div>"
+    },
     "description": "This will place the selected text between <div></div> Tags"
   },
   {
     "key": "ctrl+p",
     "command": "editor.action.insertSnippet",
     "when": "editorHasSelection && editorTextFocus",
-    "args": { "snippet": "<p>$TM_SELECTED_TEXT</p>" },
+    "args": { "snippet": "<p ${1|id=\"\",class=\"\"|}>$TM_SELECTED_TEXT</p>" },
     "description": "This will place the selected text between <p></p> Tags"
-  },
-  {
-    "key": "ctrl+t",
-    "command": "editor.action.insertSnippet",
-    "when": "editorHasSelection && editorTextFocus",
-    "args": { "snippet": "<p>${2|log,info,warn,error,dir|}('${1:here}')</p>" },
-    "description": "This is just for testing"
   }
 ]
