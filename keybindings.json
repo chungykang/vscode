@@ -1,4 +1,4 @@
-// /Users/user_name/Library/Application Support/Code/User
+// /Users/username/Library/Application Support/Code/User/keybindings.json
 // Place your key bindings in this file to override the defaults
 
 [
@@ -24,5 +24,23 @@
     "when": "editorHasSelection && editorTextFocus",
     "args": { "snippet": "<p ${1|id=\"\",class=\"\"|}>$TM_SELECTED_TEXT</p>" },
     "description": "This will place the selected text between <p></p> Tags"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "editor.action.insertSnippet",
+    "when": "editorHasSelection && editorTextFocus",
+    "args": {
+      "snippet": "<li>$TM_SELECTED_TEXT</li>"
+    },
+    "description": "This is just a test"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "editor.action.insertSnippet",
+    "when": "editorHasSelection && editorTextFocus",
+    "args": {
+      "snippet": "<span ${1|id=\"\",class=\"\"|}>$TM_SELECTED_TEXT</span>"
+    },
+    "description": "This will place the selected text between <span></span> Tags"
   }
 ]
